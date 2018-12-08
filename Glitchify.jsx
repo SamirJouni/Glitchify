@@ -16,7 +16,7 @@ const Glitchify = props => {
 			`;
 	const Glitched = styled.div`
 	font-family: "Comfortaa", sans-serif;
-	font-size: ${props.fontSize ? props.fontSize : 1}rem;
+	font-size: ${props.fontSize ? props.fontSize : "1rem"};
 	color: ${props.color ? props.color : 'black'};
 	text-align: center;
 	position: relative;
