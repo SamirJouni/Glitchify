@@ -1,0 +1,29 @@
+{
+  "name": "react-glitchify",
+  "version": "1.0.0",
+  "description": "Glitchify any text you want using this react component. The animation is very catchy.",
+  "main": "Glitchify.jsx",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SamirJouni/Glitchify.git"
+  },
+  "keywords": [
+    "Glitchify",
+    "Glitch",
+    "Animation",
+    "React"
+  ],
+  "author": "Samir Jouni",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SamirJouni/Glitchify/issues"
+  },
+  "homepage": "https://github.com/SamirJouni/Glitchify#readme",
+  "dependencies": {
+    "react": "^16.6.3",
+    "styled-components": "^4.1.2"
+  }
+}
