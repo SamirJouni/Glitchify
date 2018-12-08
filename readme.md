@@ -18,9 +18,9 @@ import Glitchify from 'react-glitchify';
 
 **You may also use the following options:**
 
-* steps: The steps that the animation is divided by. More steps could result in more distortion, but also impact performance more. (Value is a Number)
+* steps: The steps that the animation is divided by. More steps could result in a more prevalent distortion, but will also impact the performance more. (Value is a Number)
 * fontSize: The size of the font. Please specify unit: px, em, rem, vw, vh...(Value is a string)
-* color: The color of the text. Please specify color with its unit. Hex colors with an octothorpe ('#'), rgb colors with rgb( , , ), and so on... (Value is a string)
+* color: The color of the text. Please specify the color with its unit. Hex colors preceded by an octothorpe ('#'), rgb colors using rgb( , , ), and so on... (Value is a string)
 
 **All those options should be passed as props. If none are specified, you will get a default of:**
 
