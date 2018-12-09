@@ -34,3 +34,7 @@ import Glitchify from 'react-glitchify';
 * react-dom
 * prop-types
 * styled-components
+
+**Get it on NPM:**
+
+https://www.npmjs.com/package/react-glitchify
