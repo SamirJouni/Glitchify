@@ -28,13 +28,6 @@ import Glitchify from 'react-glitchify';
 * 1rem fontSize
 * black color
 
-**The component has the following dependencies:**
-
-* react
-* react-dom
-* prop-types
-* styled-components
-
 **Get it on NPM:**
 
 https://www.npmjs.com/package/react-glitchify
