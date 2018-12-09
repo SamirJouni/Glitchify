@@ -31,4 +31,6 @@ import Glitchify from 'react-glitchify';
 **The component has the following dependencies:**
 
 * react
+* react-dom
+* prop-types
 * styled-components

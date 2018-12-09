@@ -1,5 +1,7 @@
 import React from "react";
 import styled, { keyframes } from "styled-components";
+import PropTypes from "prop-types";
+
 
 const generateAnimation = (steps = 20) => {
 	let animation = "";
@@ -10,14 +12,14 @@ const generateAnimation = (steps = 20) => {
 	return animation;
 };
 
-const Glitchify = props => {
+const Glitchify = ({children, steps, fontSize, color}) => {
 	const glitch = keyframes`
-			${generateAnimation(props.steps)}
+			${generateAnimation(steps)}
 			`;
 	const Glitched = styled.div`
 	font-family: "Comfortaa", sans-serif;
-	font-size: ${props.fontSize ? props.fontSize : "1rem"};
-	color: ${props.color ? props.color : 'black'};
+	font-size: ${fontSize ? fontSize : "1rem"};
+	color: ${color ? color : 'black'};
 	text-align: center;
 	position: relative;
 	margin-top: 3vw;
@@ -31,7 +33,7 @@ const Glitchify = props => {
 	}
 	&:before,
 	&:after {
-		content: "${props.children}";
+		content: "${children}";
 		position: absolute;
 		top: 0;
 		color: #464748;
@@ -50,7 +52,16 @@ const Glitchify = props => {
 		animation: ${glitch} 2s infinite linear alternate-reverse;
 	}
 `;
-	return <Glitched id="copyright">{props.children}</Glitched>;
+	return <Glitched id="copyright">{children}</Glitched>;
 };
+
+Glitchify.propTypes = {
+	steps: PropTypes.number,
+	fontSize: PropTypes.string,
+	color: PropTypes.string
+}
+Glitchify.defaultProps = {
+	children: 'Please Enter A Custom Text!'
+}
 
 export default Glitchify;
