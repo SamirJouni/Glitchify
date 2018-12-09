@@ -36,7 +36,7 @@ const Glitchify = ({children, steps, fontSize, color}) => {
 		content: "${children}";
 		position: absolute;
 		top: 0;
-		color: #464748;
+		color: ${color ? color : 'black'};
 		background: white;
 		overflow: hidden;
 		clip: rect(0, 900px, 0, 0);
