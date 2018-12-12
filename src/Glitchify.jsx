@@ -52,7 +52,7 @@ const Glitchify = ({children, steps, fontSize, color}) => {
 		animation: ${glitch} 2s infinite linear alternate-reverse;
 	}
 `;
-	return <Glitched id="copyright">{children}</Glitched>;
+	return <Glitched>{children}</Glitched>;
 };
 
 Glitchify.propTypes = {
