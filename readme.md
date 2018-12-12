@@ -28,6 +28,19 @@ import Glitchify from 'react-glitchify';
 * 1rem fontSize
 * black color
 
+**How To Build From Source:**
+
+*For Development:*
+```
+	npm run no-defaults
+```
+
+*For Production:*
+```
+	npm run build
+```
+_You may also just use the react component by copying Glitchify.jsx into your project and importing it from the directory you put it in._
+
 **Get it on NPM:**
 
 https://www.npmjs.com/package/react-glitchify

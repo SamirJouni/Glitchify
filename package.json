@@ -1,10 +1,12 @@
 {
   "name": "react-glitchify",
-  "version": "2.0.6",
+  "version": "2.0.7",
   "description": "Glitchify any text you want using this react component. The animation is very catchy.",
-  "main": "./lib/Glitchify.js",
+  "main": "build/index.js",
   "scripts": {
-    "build": "webpack",
+    "start": "webpack --watch",
+    "build": "webpack --mode production",
+	"no-defaults": "webpack --mode none",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -24,25 +26,20 @@
   },
   "homepage": "https://github.com/SamirJouni/Glitchify#readme",
   "dependencies": {
-    "styled-components": "^4.1.2"
-  },
-  "peerDependencies": {
-    "react": "^16.0.0",
-    "react-dom": "^16.0.0",
-    "prop-types": "^15.6.0"
-  },
-  "devDependencies": {
-    "babel-core": "^6.21.0",
-    "babel-loader": "^7.1.4",
-    "babel-plugin-styled-components": "^1.9.2",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-react": "^6.16.0",
-    "babel-preset-stage-0": "^6.24.1",
-    "path": "^0.12.7",
+    "styled-components": "^4.1.2",
     "prop-types": "^15.6.0",
     "react": "^16.0.0",
-    "react-dom": "^16.0.0",
-    "webpack": "^4.20.2",
-    "webpack-cli": "^3.1.1"
+    "react-dom": "^16.0.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.0.0",
+    "babel-plugin-styled-components": "^1.9.4",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "install": "^0.12.2",
+    "npm": "^6.5.0",
+    "webpack": "^4.27.1",
+    "webpack-cli": "^3.1.2"
   }
 }

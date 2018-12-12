@@ -1,20 +1,28 @@
 var path = require('path');
-
 module.exports = {
-    mode: 'production',
-    entry: './src/Glitchify.jsx',
-    output: {
-        path: path.resolve('lib'),
-        filename: 'Glitchify.js',
-        libraryTarget: 'commonjs2'
-    },
-    module: {
-        rules: [
-            {
-                test: /\.jsx?$/,
-                exclude: /(node_modules)/,
-                use: 'babel-loader'
-            }
-        ]
-    }
-}
+  entry: './src/Glitchify.jsx',
+  output: {
+    path: path.resolve(__dirname, 'build'),
+    filename: 'index.js',
+    libraryTarget: 'commonjs2'
+  },
+  module: {
+    rules: [
+      {
+        test: /\.js(x)$/,
+        include: path.resolve(__dirname, 'src'),
+        exclude: /(node_modules|bower_components|build)/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+              presets: ['react','env'],
+              plugins: ['babel-plugin-styled-components'],
+          }
+        }
+      }
+]
+  },
+  externals: {
+    'react': 'commonjs react'
+  }
+};
