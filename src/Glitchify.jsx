@@ -12,12 +12,12 @@ const generateAnimation = (steps = 20) => {
 	return animation;
 };
 
-const Glitchify = ({children, steps, fontSize, color}) => {
+const Glitchify = ({children, steps, font, fontSize, color}) => {
 	const glitch = keyframes`
 			${generateAnimation(steps)}
 			`;
 	const Glitched = styled.div`
-	font-family: "Comfortaa", sans-serif;
+	font-family: ${font};
 	font-size: ${fontSize};
 	color: ${color};
 	text-align: center;
@@ -57,12 +57,14 @@ const Glitchify = ({children, steps, fontSize, color}) => {
 
 Glitchify.propTypes = {
 	steps: PropTypes.number,
+	font: PropTypes.string,
 	fontSize: PropTypes.string,
 	color: PropTypes.string
 }
 Glitchify.defaultProps = {
 	children: 'Please Enter A Custom Text!',
 	steps: 20,
+	font: 'sans-serif',
 	fontSize: '1rem',
 	color: 'black'
 }
