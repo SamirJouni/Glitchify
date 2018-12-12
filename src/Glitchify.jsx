@@ -18,8 +18,8 @@ const Glitchify = ({children, steps, fontSize, color}) => {
 			`;
 	const Glitched = styled.div`
 	font-family: "Comfortaa", sans-serif;
-	font-size: ${fontSize ? fontSize : "1rem"};
-	color: ${color ? color : 'black'};
+	font-size: ${fontSize};
+	color: ${color};
 	text-align: center;
 	position: relative;
 	margin-top: 3vw;
@@ -36,7 +36,7 @@ const Glitchify = ({children, steps, fontSize, color}) => {
 		content: "${children}";
 		position: absolute;
 		top: 0;
-		color: ${color ? color : 'black'};
+		color: ${color};
 		background: white;
 		overflow: hidden;
 		clip: rect(0, 900px, 0, 0);
@@ -61,7 +61,10 @@ Glitchify.propTypes = {
 	color: PropTypes.string
 }
 Glitchify.defaultProps = {
-	children: 'Please Enter A Custom Text!'
+	children: 'Please Enter A Custom Text!',
+	steps: 20,
+	fontSize: '1rem',
+	color: 'black'
 }
 
 export default Glitchify;
