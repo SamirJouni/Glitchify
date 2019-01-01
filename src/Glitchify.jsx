@@ -12,7 +12,7 @@ const generateAnimation = (steps = 20) => {
 	return animation;
 };
 
-const Glitchify = ({children, steps, font, fontSize, color}) => {
+const Glitchify = ({children, steps, font, fontSize, color, background}) => {
 	const glitch = keyframes`
 			${generateAnimation(steps)}
 			`;
@@ -37,7 +37,7 @@ const Glitchify = ({children, steps, font, fontSize, color}) => {
 		position: absolute;
 		top: 0;
 		color: ${color};
-		background: white;
+		background: ${background};
 		overflow: hidden;
 		clip: rect(0, 900px, 0, 0);
 	}
@@ -59,14 +59,16 @@ Glitchify.propTypes = {
 	steps: PropTypes.number,
 	font: PropTypes.string,
 	fontSize: PropTypes.string,
-	color: PropTypes.string
+	color: PropTypes.string,
+	background: PropTypes.string
 }
 Glitchify.defaultProps = {
 	children: 'Please Enter A Custom Text!',
 	steps: 20,
 	font: 'sans-serif',
 	fontSize: '1rem',
-	color: 'black'
+	color: 'black',
+	background: 'white'
 }
 
 export default Glitchify;
