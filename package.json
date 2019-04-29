@@ -6,7 +6,7 @@
   "scripts": {
     "start": "webpack --watch",
     "build": "webpack --mode production",
-	"no-defaults": "webpack --mode none",
+    "no-defaults": "webpack --mode none",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -26,20 +26,20 @@
   },
   "homepage": "https://github.com/SamirJouni/Glitchify#readme",
   "dependencies": {
-    "styled-components": "^4.1.2",
-    "prop-types": "^15.6.0",
-    "react": "^16.0.0",
-    "react-dom": "^16.0.0"
+    "styled-components": "^4.2.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-loader": "^7.0.0",
-    "babel-plugin-styled-components": "^1.9.4",
+    "babel-plugin-styled-components": "^1.10.0",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "install": "^0.12.2",
-    "npm": "^6.5.0",
-    "webpack": "^4.27.1",
-    "webpack-cli": "^3.1.2"
+    "npm": "^6.9.0",
+    "webpack": "^4.30.0",
+    "webpack-cli": "^3.3.1"
   }
 }
