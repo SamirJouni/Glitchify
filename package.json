@@ -19,8 +19,8 @@
     "Animation",
     "React"
   ],
-  "author": "Samir Jouni",
-  "license": "MIT",
+  "author": "Samir Jouni <contact@samirjouni.com> (https://samirjouni.com)",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/SamirJouni/Glitchify/issues"
   },
