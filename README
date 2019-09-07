@@ -1,5 +1,3 @@
-[![npm version](https://badge.fury.io/js/react-glitchify.svg)](https://badge.fury.io/js/react-glitchify)
-
 # GLITCHIFY
 
 A React component that plays a glitch animation for any text that you enter.
@@ -33,20 +31,3 @@ import Glitchify from 'react-glitchify';
 * black color
 * white background
 * sans-serif font
-
-**How To Build From Source:**
-
-*For Development:*
-```
-	npm run no-defaults
-```
-
-*For Production:*
-```
-	npm run build
-```
-_You may also just use the react component by copying Glitchify.jsx into your project and importing it from the directory you put it in._
-
-**Get it on NPM:**
-
-https://www.npmjs.com/package/react-glitchify
