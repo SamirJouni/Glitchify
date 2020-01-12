@@ -1,5 +1,4 @@
 [![npm version](https://badge.fury.io/js/react-glitchify.svg)](https://badge.fury.io/js/react-glitchify)
-[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://paypal.me/SamirJouni)
 
 # GLITCHIFY
 
