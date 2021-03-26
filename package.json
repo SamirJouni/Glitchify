@@ -1,6 +1,6 @@
 {
   "name": "react-glitchify",
-  "version": "2.4.15",
+  "version": "2.4.16",
   "description": "Glitchify any text you want using this react component. The animation is very catchy.",
   "main": "build/index.js",
   "scripts": {
@@ -28,19 +28,19 @@
   },
   "homepage": "https://github.com/SamirJouni/Glitchify#readme",
   "dependencies": {
-    "styled-components": "^5.2.1",
     "prop-types": "^15.7.2",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "styled-components": "^5.2.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.12.3",
-    "@babel/plugin-proposal-class-properties": "^7.12.1",
-    "@babel/preset-env": "^7.12.1",
-    "@babel/preset-react": "^7.12.5",
-    "babel-loader": "^8.2.1",
-    "babel-plugin-styled-components": "^1.11.1",
-    "webpack": "^5.4.0",
-    "webpack-cli": "^4.2.0"
+    "@babel/core": "^7.13.10",
+    "@babel/plugin-proposal-class-properties": "^7.13.0",
+    "@babel/preset-env": "^7.13.12",
+    "@babel/preset-react": "^7.12.13",
+    "babel-loader": "^8.2.2",
+    "babel-plugin-styled-components": "^1.12.0",
+    "webpack": "^5.28.0",
+    "webpack-cli": "^4.5.0"
   }
 }
